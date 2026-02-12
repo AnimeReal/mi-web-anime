@@ -141,8 +141,13 @@ function mostrarCapitulo(index) {
 
     const cap = temporadaActual.capitulos[index];
 
-    videoPlayer.src = cap.video;
-    videoPlayer.load();
+    let videoURL = cap.video;
+    if(videoURL.includes("view?usp=sharing")){
+        videoURL = videoURL.replace("view?usp=sharing", "preview");
+    }
+
+
+    videoPlayer.src = videoURL;
     tituloCapitulo.textContent = cap.titulo;
     descripcionCapitulo.textContent = cap.descripcion;
 }
