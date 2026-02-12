@@ -10,17 +10,17 @@ const animes = [
                 capitulos: [
                     { 
                         titulo: "Capítulo 1", 
-                        video: "https://mixdrop.co/e/vkzk4136fomjvo", 
+                        video: "https://mixdrop.top/e/vkzk4136fomjvo", 
                         descripcion: "Naruto conoce a sus compañeros..." 
                     },
                     { 
                         titulo: "Capítulo 2", 
-                        video: "https://mixdrop.co/e/4dmd6o8pcx07kd", 
+                        video: "https://mixdrop.top/e/4dmd6o8pcx07kd", 
                         descripcion: "Naruto enfrenta su primer reto..." 
                     },
                     { 
                         titulo: "Capítulo 3", 
-                        video: "https://mixdrop.co/e/8lqlk98rtk0dwl", 
+                        video: "https://mixdrop.top/e/8lqlk98rtk0dwl", 
                         descripcion: "Naruto enfrenta nuevos desafíos..." 
                     },
                 ]
