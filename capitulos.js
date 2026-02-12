@@ -8,18 +8,28 @@ const animes = [
             {
                 nombre: "Temporada 1",
                 capitulos: [
-                    { titulo: "Capítulo 1", video: "https://mega.nz/file/nEwnibZR#c23KX7oH1l8NNoBZlTf1ligpPUBktyQSt7wuz7TbzxY", descripcion: "Naruto conoce a sus compañeros..." },
-                    { titulo: "Capítulo 2", video: "https://mega.nz/file/TBgBjD5Q#LDp0b9gkemGQLxeL5E6aGDHR6jorn6fC6_3PSg6KXf4", descripcion: "Naruto enfrenta su primer reto..." }
+                    { 
+                        titulo: "Capítulo 1", 
+                        video: "https://mega.nz/file/nEwnibZR#c23KX7oH1l8NNoBZlTf1ligpPUBktyQSt7wuz7TbzxY", 
+                        descripcion: "Naruto conoce a sus compañeros..." 
+                    },
+                    { 
+                        titulo: "Capítulo 2", 
+                        video: "https://mega.nz/file/TBgBjD5Q#LDp0b9gkemGQLxeL5E6aGDHR6jorn6fC6_3PSg6KXf4", 
+                        descripcion: "Naruto enfrenta su primer reto..." 
+                    }
                 ]
             },
-	    {
-	        nombre: "Temporada 2",
+            {
+                nombre: "Temporada 2",
                 capitulos: [
-                    { titulo: "Capítulo 3", video: "https://mega.nz/file/uApmWCYa#JeM-oegwixcJ0LD4DgJWiewWeedsIevf7io3D2FkOAA", descripcion: "Naruto conoce a sus compañeros..." },
+                    { 
+                        titulo: "Capítulo 3", 
+                        video: "https://mega.nz/file/uApmWCYa#JeM-oegwixcJ0LD4DgJWiewWeedsIevf7io3D2FkOAA", 
+                        descripcion: "Naruto enfrenta nuevos desafíos..." 
+                    },
                 ]
             },
-
-
         ]
     },
     {
@@ -30,7 +40,11 @@ const animes = [
             {
                 nombre: "Temporada 1",
                 capitulos: [
-                    { titulo: "Capítulo 1", video: "videos/aot-s1-1.mp4", descripcion: "Comienza la invasión de los titanes..." }
+                    { 
+                        titulo: "Capítulo 1", 
+                        video: "https://mega.nz/file/exampleAOT#enlace-publico", 
+                        descripcion: "Comienza la invasión de los titanes..." 
+                    }
                 ]
             }
         ]
@@ -43,7 +57,11 @@ const animes = [
             {
                 nombre: "Temporada 1",
                 capitulos: [
-                    { titulo: "Capítulo 1", video: "videos/demon-s1-1.mp4", descripcion: "Tanjiro comienza su entrenamiento..." }
+                    { 
+                        titulo: "Capítulo 1", 
+                        video: "https://mega.nz/file/exampleDemon#enlace-publico", 
+                        descripcion: "Tanjiro comienza su entrenamiento..." 
+                    }
                 ]
             }
         ]
