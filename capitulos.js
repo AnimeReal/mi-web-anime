@@ -17,13 +17,8 @@ const animes = [
                         titulo: "Capítulo 2", 
                         video: "https://mega.nz/file/TBgBjD5Q#LDp0b9gkemGQLxeL5E6aGDHR6jorn6fC6_3PSg6KXf4", 
                         descripcion: "Naruto enfrenta su primer reto..." 
-                    }
-                ]
-            },
-            {
-                nombre: "Temporada 2",
-                capitulos: [
-                    { 
+                    },
+		    { 
                         titulo: "Capítulo 3", 
                         video: "https://mega.nz/file/uApmWCYa#JeM-oegwixcJ0LD4DgJWiewWeedsIevf7io3D2FkOAA", 
                         descripcion: "Naruto enfrenta nuevos desafíos..." 
