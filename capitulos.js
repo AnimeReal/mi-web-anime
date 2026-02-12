@@ -10,17 +10,17 @@ const animes = [
                 capitulos: [
                     { 
                         titulo: "Capítulo 1", 
-                        video: "https://mixdrop.top/e/vkzk4136fomjvo", 
+                        video: "https://mixdrop.co/e/vkzk4136fomjvo", 
                         descripcion: "Naruto conoce a sus compañeros..." 
                     },
                     { 
                         titulo: "Capítulo 2", 
-                        video: "https://mixdrop.top/e/4dmd6o8pcx07kd", 
+                        video: "https://mixdrop.co/e/4dmd6o8pcx07kd", 
                         descripcion: "Naruto enfrenta su primer reto..." 
                     },
-		    { 
+                    { 
                         titulo: "Capítulo 3", 
-                        video: "https://mixdrop.top/e/8lqlk98rtk0dwl", 
+                        video: "https://mixdrop.co/e/8lqlk98rtk0dwl", 
                         descripcion: "Naruto enfrenta nuevos desafíos..." 
                     },
                 ]
@@ -67,6 +67,7 @@ let animeActual = null;
 let temporadaActual = null;
 let capituloActualIndex = null;
 
+// Contenedores
 const animeContainer = document.getElementById("animeContainer");
 const temporadasContainer = document.getElementById("temporadasContainer");
 const capitulosContainer = document.getElementById("capitulosContainer");
@@ -85,7 +86,7 @@ function mostrarAnimes() {
     capitulosContainer.style.display = "none";
     reproductorSection.style.display = "none";
 
-    animes.forEach((anime, i) => {
+    animes.forEach((anime) => {
         const div = document.createElement("div");
         div.classList.add("anime-card");
         div.innerHTML = `
@@ -106,7 +107,7 @@ function mostrarTemporadas(anime) {
     reproductorSection.style.display = "none";
 
     temporadasContainer.innerHTML = "";
-    anime.temporadas.forEach((temp, i) => {
+    anime.temporadas.forEach((temp) => {
         const div = document.createElement("div");
         div.classList.add("anime-card");
         div.innerHTML = `<div class="overlay"><h3>${temp.nombre}</h3></div>`;
@@ -123,8 +124,6 @@ function mostrarCapitulos(temp) {
     reproductorSection.style.display = "none";
 
     capitulosContainer.innerHTML = "";
-
-    // Tarjetas de capítulos
     temp.capitulos.forEach((cap, i) => {
         const div = document.createElement("div");
         div.classList.add("anime-card");
@@ -134,17 +133,26 @@ function mostrarCapitulos(temp) {
     });
 }
 
-// Mostrar capítulo en reproductor
+// Mostrar capítulo en reproductor usando iframe
 function mostrarCapitulo(index) {
     capituloActualIndex = index;
     capitulosContainer.style.display = "none";
     reproductorSection.style.display = "block";
 
     const cap = temporadaActual.capitulos[index];
-    videoPlayer.src = cap.video;
+
+    // Si es Mixdrop, cambiar a .co
+    let videoURL = cap.video;
+    if (videoURL.includes("mixdrop.top")) {
+        videoURL = videoURL.replace("mixdrop.top", "mixdrop.co");
+    }
+
+    // Asignar al iframe
+    videoPlayer.src = videoURL;
     tituloCapitulo.textContent = cap.titulo;
     descripcionCapitulo.textContent = cap.descripcion;
 }
+
 // Botones siguiente / anterior
 nextBtn.onclick = () => {
     if (capituloActualIndex < temporadaActual.capitulos.length - 1) {
