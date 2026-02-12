@@ -15,12 +15,12 @@ const animes = [
                     },
                     { 
                         titulo: "Capítulo 2", 
-                        video: "https://mega.nz/file/TBgBjD5Q#LDp0b9gkemGQLxeL5E6aGDHR6jorn6fC6_3PSg6KXf4", 
+                        video: "https://www.youtube.com/watch?v=6siPl8Kvdb8", 
                         descripcion: "Naruto enfrenta su primer reto..." 
                     },
 		    { 
                         titulo: "Capítulo 3", 
-                        video: "https://mega.nz/file/uApmWCYa#JeM-oegwixcJ0LD4DgJWiewWeedsIevf7io3D2FkOAA", 
+                        video: "https://www.youtube.com/watch?v=fUxjlk9w0DU", 
                         descripcion: "Naruto enfrenta nuevos desafíos..." 
                     },
                 ]

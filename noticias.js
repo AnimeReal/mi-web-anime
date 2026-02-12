@@ -1,9 +1,8 @@
 // Lista de noticias
 const noticias = [
-    { anime: "Naruto", titulo: "Nuevo arco de Naruto", contenido: "Naruto enfrenta a un nuevo enemigo...", imagen: "imagenes/naruto.jpg" },
-    { anime: "Naruto", titulo: "Personajes secundarios destacados", contenido: "Analizamos los personajes secundarios de Naruto...", imagen: "imagenes/naruto.jpg" },
-    { anime: "Attack on Titan", titulo: "Avance temporada 4", contenido: "Los titanes se acercan...", imagen: "imagenes/aot.jpg" },
-    { anime: "Demon Slayer", titulo: "Nuevos personajes revelados", contenido: "Conoce a los cazadores...", imagen: "imagenes/demon.jpg" }
+    { anime: "Naruto", titulo: "Subidos 3 capítulos de Naruto", contenido: "3 primeros capítulos subidos", imagen: "imagenes/narutoog.jpg" },
+    { anime: "Attack on Titan", titulo: "Ningún capítulo subido", contenido: "Próximamente...", imagen: "imagenes/aot.jpg" },
+    { anime: "Demon Slayer", titulo: "Ningún capítulo subido", contenido: "Próximamente...", imagen: "imagenes/demon.jpg" }
 ];
 
 // Detectar filtro de query string
