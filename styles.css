@@ -1,0 +1,242 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+/* Header */
+header {
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.85);
+    box-shadow: 0 0 20px #00c0ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #00c0ff;
+    text-shadow: 0 0 10px #00c0ff, 0 0 20px #0090ff;
+}
+
+nav a {
+    color: #00c0ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0090ff;
+    text-shadow: 0 0 10px #00c0ff;
+}
+
+/* Grid de animes */
+.anime-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.anime-card {
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.anime-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.anime-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 30px #00c0ff, 0 0 50px #0090ff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;            
+    align-items: center;      
+    justify-content: center;  
+    background: rgba(0,0,0,0.35);    
+}
+
+.overlay h3 {
+    color: #ffffff;           /* Blanco sobre la imagen */
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 0 0 8px #00c0ff, 0 0 15px #0090ff;
+    margin: 0;
+}
+#reproductorSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#reproductorSection video {
+    border-radius: 12px;
+    box-shadow: 0 0 25px #00c0ff;
+}
+
+#reproductorSection button {
+    background: #00c0ff;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0 0 6px #00c0ff;
+}
+
+#reproductorSection button:hover {
+    background: #0090ff;
+    box-shadow: 0 0 20px #00c0ff;
+}
+/* Grid de noticias */
+.noticias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Tarjeta de noticia */
+.noticia-card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.noticia-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.noticia-card h3 {
+    margin: 10px;
+    color: #00c0ff; /* azul neón */
+    text-shadow: 0 0 6px #00c0ff;
+}
+
+.noticia-card p {
+    margin: 10px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: #ccc;
+}
+
+.noticia-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00c0ff, 0 0 40px #0090ff;
+}
+/* Contenedor de capítulos */
+#capitulosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetas de capítulo */
+#capitulosContainer .anime-card {
+    width: 180px;
+    height: 100px;
+}
+#capitulosContainer .anime-card .overlay h3 {
+    color: #00c0ff;
+    text-shadow: 0 0 8px #00c0ff, 0 0 15px #0090ff;
+    margin: 0;
+}
+
+#capitulosContainer .anime-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00c0ff, 0 0 40px #0090ff;
+}
+#animeContainer .anime-card {
+    width: 250px;
+    height: 150px;
+}
+#temporadasContainer .anime-card {
+    width: 200px;
+    height: 120px;
+}
+.contact-form {
+    background: rgba(0,0,0,0.85);
+    padding: 35px 45px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 0 25px #00c0ff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 15px #00c0ff;
+}
+
+.contact-form h2 {
+    color: #00c0ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background: #00c0ff;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0 0 6px #00c0ff;
+}
+
+.contact-form button:hover {
+    background: #0090ff;
+    box-shadow: 0 0 15px #00c0ff;
+}
+section {
+    transition: all 0.4s ease-in-out;
+}
+body {
+    cursor: url('cursor.png'), auto;
+}
