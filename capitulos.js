@@ -10,7 +10,7 @@ const animes = [
                 capitulos: [
                     { 
                         titulo: "Capítulo 1", 
-                        video: "https://mega.nz/file/nEwnibZR#c23KX7oH1l8NNoBZlTf1ligpPUBktyQSt7wuz7TbzxY", 
+                        video: "https://drive.google.com/file/d/10o9OwfwLBBpdmJIb1uzmx7b1vo9hd2LE/view?usp=drive_link", 
                         descripcion: "Naruto conoce a sus compañeros..." 
                     },
                     { 
