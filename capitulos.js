@@ -10,7 +10,7 @@ const animes = [
                 capitulos: [
                     { 
                         titulo: "Capítulo 1", 
-                        video: "https://mixdrop.co/e/vkzk4136fomjvo", 
+                        video: "https://drive.google.com/uc?export=download&id=10o9OwfwLBBpdmJIb1uzmx7b1vo9hd2LE", 
                         descripcion: "Naruto conoce a sus compañeros..." 
                     },
                     { 
@@ -141,14 +141,8 @@ function mostrarCapitulo(index) {
 
     const cap = temporadaActual.capitulos[index];
 
-    // Si es Mixdrop, cambiar a .co
-    let videoURL = cap.video;
-    if (videoURL.includes("mixdrop.top")) {
-        videoURL = videoURL.replace("mixdrop.top", "mixdrop.co");
-    }
-
-    // Asignar al iframe
-    videoPlayer.src = videoURL;
+    videoPlayer.src = cap.video;
+    videoPlayer.load();
     tituloCapitulo.textContent = cap.titulo;
     descripcionCapitulo.textContent = cap.descripcion;
 }
